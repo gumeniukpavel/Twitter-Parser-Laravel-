@@ -12,7 +12,7 @@ class CreateTwittersTable extends Migration
             $table->increments('id');
             $table->string('photo')->nullable();
             $table->string('name')->nullable();
-            $table->string('twitterId')->nullable();
+            $table->unique('twitterId')->nullable();
             $table->string('description')->nullable();
             $table->integer('tweets')->nullable();
             $table->integer('following')->nullable();

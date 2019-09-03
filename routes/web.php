@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', 'Api\TwitterController@index');
-Route::post('/store', 'Api\TwitterController@store');
-Route::post('/delete', 'Api\TwitterController@destroy');
-Route::post('/refresh', 'Api\TwitterController@refresh');
+Route::apiResource('/twitter', 'TwitterController');
